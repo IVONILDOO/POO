@@ -1,0 +1,19 @@
+O que são classes abstratas e interface em Java.
+Quando devemos usar uma classe abstrata ou interface em Java?
+
+Uma interface não é considerada uma Classe e sim uma Entidade, não possui implementação,
+apenas assinatura, ou seja, apenas a definição dos seus métodos sem o corpo. Todos os métodos 
+são abstratos. Seus métodos são implicitamente Públicos e Abstratos. Não há como fazer uma 
+instância de uma Interface e nem como criar um Construtor. Funcionam como um tipo de "contrato",
+onde são especificados os atributos, métodos e funções que as classes que implementem essa interface 
+são obrigadas a implementar.
+As classes abstratas devem conter pelo menos um método abstrato, que não tem corpo. É um tipo especial
+de classe que não há como criar instâncias dela. É usada apenas para ser herdada, funciona como uma 
+super classe. Uma grande vantagem é que força a hierarquia para todas as sub-classes.
+É um tipo de contrato que faz com que as sub-classes contemplem as mesmas hierarquias e/ou padrões.
+
+Usamos Interface quando precisamos que classes de diferentes origens (herança) tenham métodos em comum
+e possam ser acessados através de uma mesma variável.
+A classe abstrata é utilizada quando você quer que uma classe que
+herde dela implemente alguns métodos, mas que também possam ter métodos implementados na própria classe
+abstrata.

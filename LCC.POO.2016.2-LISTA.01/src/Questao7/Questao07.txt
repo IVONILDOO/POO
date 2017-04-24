@@ -1,0 +1,9 @@
+Qual a diferença entre herança e composição em Java?
+
+Quando utilizamos composição, instanciamos a classe que desejamos dentro de nosso código.
+Dessa forma, estamos estendendo as responsabilidades pela delegação de trabalho a outros 
+objetos. Em vez de codificar um comportamento estaticamente, definimos pequenos comportamentos 
+padrão e usamos composição para definir comportamentos mais complexos. Ainda na utilização de
+composição, podemos mudar a associação entre classes em tempo de execução e permitir que um objeto
+assuma mais de um comportamento, já com a herança não podemos, 
+quando for compilado não poderá ser alterado.
