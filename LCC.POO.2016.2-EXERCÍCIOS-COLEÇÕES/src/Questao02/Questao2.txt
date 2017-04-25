@@ -1,0 +1,4 @@
+O que é um Conjunto?
+
+Um conjunto é uma coleção que não possui elementos duplicados.
+Pode ser ordenado ou não. Depende do que o programador deseja

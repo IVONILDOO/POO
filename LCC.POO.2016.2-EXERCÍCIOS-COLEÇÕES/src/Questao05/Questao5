@@ -1,0 +1,17 @@
+Como funcionam os seguintes métodos (remove(Object), indexOf(Object) e contains(Object))
+ nas Listas de maneira geral? Ele requer a implementação de qual método?
+ 
+ 
+remove(Object):
+Remove um objeto presente em qualquer lugar da lista, fornecendo o índice desejado. 
+O método remove também é sobrecarregado.
+
+remove(int): remove o objeto pelo índice, e retorna o objeto removido 
+
+remove(E): remove o elemento utilizando a implementação de equals 
+As listas não possuem “buracos”!
+Os elementos posteriores ao elemento removido são movidos uma casa à esquerda. 
+
+indexOf(Object): retorna o índice referente à primeira ocorrência daquele objeto
+
+contains(Object): retorna um booleano indicando se o objeto está na lista
