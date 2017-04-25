@@ -12,7 +12,7 @@ public class gerente extends Funcionario{
 	}
 
 	public void imprimeDados(){
-		System.out.println("Nome"+ super.nome+"nascimento: "+ super.getNascimento()+"salario: "+super.salario+"area "+this.area+ calculaImposto());
+		System.out.println("Nome"+ super.nome+"nascimento: "+ super.nascimento+"salario: "+super.salario+"area "+this.area+ calculaImposto());
 	}
 
 }

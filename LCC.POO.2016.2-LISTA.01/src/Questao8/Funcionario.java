@@ -14,7 +14,7 @@ public class Funcionario extends Pessoa {
 
 	@Override
 	public void imprimeDados(){
-		 System.out.println("Nome"+super.nome+ "data: "+super.getNascimento() + "salario: "+ this.salario+ calculaImposto());
+		 System.out.println("Nome"+super.nome+ "data: "+super.nascimento + "salario: "+ this.salario+ calculaImposto());
 		
 	}
 }
