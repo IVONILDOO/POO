@@ -1,0 +1,10 @@
+Me explique com suas palavras como funciona as estruturas que usam hash. O que é um
+código hash? (se for mais fácil de explicar pode usar o exemplo da portaria e caixa de
+correspondências)
+
+É como uma caixa de correspondências de um prédio, O código hash ajuda o porteiro a achar mais rápido em qual gaveta, ele 
+deve colocar cada correspondência. tambem não se admite 
+elementos repetidos.
+Um bom número hash é aquele que espalha melhor na caixa de correspondência.
+ Por isso, devemos pensar bem antes de implementar nossa função de retornar um hash.
+

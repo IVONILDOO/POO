@@ -1,10 +1,24 @@
-Me explique com suas palavras como funciona as estruturas que usam hash. O que é um
-código hash? (se for mais fácil de explicar pode usar o exemplo da portaria e caixa de
-correspondências)
+Quais as diferenças de HashSet, LinkedHashSet e TreeSet?
 
-É como uma caixa de correspondências de um prédio, O código hash ajuda o porteiro a achar mais rápido em qual gaveta, ele 
-deve colocar cada correspondência. tambem não se admite 
-elementos repetidos.
-Um bom número hash é aquele que espalha melhor na caixa de correspondência.
- Por isso, devemos pensar bem antes de implementar nossa função de retornar um hash.
+O HashSet é o mais rápido de todos, este usa HashTable e seus elementos não são ordenados,
+a complexidade desta estrutura é O(1), em outras palavras, não importa o quanto você adicione,
+remova, retire, o tempo de execução sempre será o mesmo. E isso é extremamente crítico em 
+processos onde temos uma situação crítica com milhões de dados a serem inseridos em um Set.
+Por outro lado, a garantia de continuidade na ordem dos elementos inseridos é zero, ou seja,
+ esse tipo de estrutura é indicada se você precisa apenas garantir a alta performance sem se 
+ importar com a ordem com que os elementos estão ordenados.
+ 
+O TreeSet implementa um algoritmo conhecido por red-black tree ou árvore rubro-negra.
+Sua principal característica é que ele é o único Set que implementa a interface SortedSet 
+em vez de Set diretamente, mas de qualquer forma SortedSet implementa Set, assim continuamos 
+tendo os mesmo métodos no TreeSet. Pelo fato de ele implementar SortedSet ele possui elementos
+ordenados automaticamente, ou seja, independente da ordem que você inserir os elementos, eles 
+serão ordenados. Mas isso tem um custo, a complexidade para os métodos add, remove e contains
+são bem maiores que do HashSet, são elas O(log (n)), não é bem uma complexidade exponencial
+mas é bem maior que O(1) que tem seu tempo inalterado.
 
+LinkedHashSet que é um meio termo entre HashSet e TreeSet, ou seja, ela nos proporciona um 
+pouco da performance do HashSet e um pouco do poder de ordenação do TreeSet. O LinkedHashSet
+faz uso também do HashTable com linked list, ou seja, temos aqui a seguinte situação: Os 
+elementos continuam na ordem que são inseridos, diferente do HashSet que “embaralha” tudo. 
+E a complexidade do LinkedHashSet é O(1) para operações básicas.

@@ -1,0 +1,16 @@
+ 4. Quais as diferenças de ArrayList, Vector e LinkedList? Explique vantagens e desvantagens de cada um.
+ 
+ 
+ArrayList: Este tipo de lista é implementado como um Array que é dimensionado dinamicamente, ou seja,
+ sempre que é necessário o seu tamanho aumenta em 50% do tamanho da lista, significa que se você tiver 
+ uma lista de tamanho igual a 10 e ela “encher”, seu tamanho aumentará para 15 automaticamente.
+Todo ArrayList começa com um tamanho fixo, que vai aumentando conforme necessário, mas o custo deste
+ aumento é alto, pois é feita uma cópia do array atual para um novo array com um novo tamanho.
+O Vector aumenta o dobro, ou seja, se você tem uma lista de 10 elementos cheia, essa lista aumentará
+ para 20, com 10 posições vazias.  Vector é sincronizado e o ArrayList não. 
+LinkedLists são implementados usando listas ligadas, ou seja, ponteiros. Deste modo, a memória
+ utilizada para armazenar uma lista não é contígua.
+Isto não permite um acesso direto como em arrays. É preciso navegar entre os ponteiros para chegar no
+ fim da lista, por exemplo.
+A desvantagem é o desempenho e a vantagem é a  economia de memória.  A desvantagem é o desempenho e a
+ vantagem é economia de memória. 
