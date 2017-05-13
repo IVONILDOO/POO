@@ -1,0 +1,3 @@
+Quais as diferenças entre LinkedList (sendo refenciado por uma Queue) e PriorityQueue?
+
+o LinkedList inserem os elementos sem ordenar, e o PriorityQueue iserem elementos de forma ordenada, utiliza o metodo compareTo

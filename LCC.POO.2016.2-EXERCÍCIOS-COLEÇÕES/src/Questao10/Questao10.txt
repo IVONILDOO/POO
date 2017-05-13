@@ -1,0 +1,7 @@
+Quando utilizamos TreeSet, qual método somos obrigados a implementar para que nosso programa não lance uma exceção?
+Explique como se dá essa implementação.
+ 
+Deve implementar a interface Comparable.
+implementando essa interface, o treeSet deve ordenar o objeto através do métodos que foi feito no comparable.
+a implementação pode comparar os inteiros, quando for igual retornar 0, quando for menor retornar -1 e quando for maior
+retornar 1.
