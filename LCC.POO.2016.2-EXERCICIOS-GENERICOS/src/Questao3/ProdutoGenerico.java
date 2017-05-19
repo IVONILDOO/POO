@@ -1,4 +1,4 @@
-package Questao4;
+package Questao3;
 
 public class ProdutoGenerico<T, E> {
 	private T codigo;

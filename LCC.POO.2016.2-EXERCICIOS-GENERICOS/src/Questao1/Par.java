@@ -1,6 +1,7 @@
 package Questao1;
 
 public class Par<Obj1, Obj2> {
+	
 	private Obj1 r;
 	private Obj2 t;
 

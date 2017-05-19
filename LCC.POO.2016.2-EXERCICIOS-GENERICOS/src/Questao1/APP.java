@@ -9,8 +9,9 @@ public class APP {
 		Par<Integer, String> ii = new Par<Integer, String>(12, "roger");
 
 		Par<Float, Float> iii = new Par<Float, Float>(6.0f, 3.0f);
+		Par<String, String> test = new Par<String, String>("é bois","int truta");
 
-		System.out.println(i.toString() + "\n" + ii.toString() + "\n" + iii.toString());
+		System.out.println(i.toString() + "\n" + ii.toString() + "\n" + iii.toString()+ test.toString());
 
 	}
 
