@@ -9,17 +9,27 @@ public class AgendaTelefonica {
 	private List<Contato> listDeContatos;
 	
 	
+
+	
+	
 	public AgendaTelefonica(){
 		listDeContatos = new ArrayList<Contato>();
 	}
+	
+	
+
 	public List<Contato> getContatos(){
 		return this.listDeContatos;
 	}
+	
+	
 	
 	public void addContato(Contato c){
 		listDeContatos.add(c);
 	}
 	
+	
+
 	public boolean removerContato(Contato c){
 		for(Contato contatos: listDeContatos){
 			if(c.equals(contatos)){
@@ -35,7 +45,7 @@ public class AgendaTelefonica {
 		Iterator <Contato> i = listDeContatos.iterator();
 		
 		while(i.hasNext()){
-			Contato a =i.next();
+			Contato a = i.next();
 			if(a.getNome().toUpperCase().contains(id.toUpperCase())){
 				i.remove();
 		}
